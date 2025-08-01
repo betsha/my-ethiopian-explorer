@@ -28,5 +28,23 @@ This project highlights the rich history of Ethiopia by showcasing important his
 - JavaScript
 - Git & GitHub
 
-## 📂 Folder Structure
+
+## 🔗 Live Preview
+
+If hosted: [View My Ethiopian Explorer Live](https://betsha.github.io/my-ethiopian-explorer)
+
+## 📬 Contact
+
+If you want to collaborate, suggest improvements, or ask anything:
+
+- Email: [betelihemhaftu@gmail.com](mailto:betelihemhaftu@gmail.com)
+- GitHub: [github.com/betsha](https://github.com/betsha)
+
+---
+
+### 🚀 Author
+
+This project was created by Betelhem Haftu, an aspiring front-end developer passionate about design, user interaction, and Ethiopian culture.
+
+---
 
