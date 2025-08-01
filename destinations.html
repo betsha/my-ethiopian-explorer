@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Destinations - Explore Ethiopia</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<script>
+  function speakWelcome() {
+    const message = "Hello, welcome to my Ethiopian Explorer website. We will help you choose and book historical places of Ethiopia. For detailed information, click the Explore Historical Places button.";
+    
+    const speech = new SpeechSynthesisUtterance(message);
+    speech.lang = 'en-US';
+    speech.rate = 1; // 1 is normal speed
+    speech.pitch = 1;
+    speech.volume = 1; // Max volume
+
+    window.speechSynthesis.speak(speech);
+  }
+</script>
+<body class="destination-page">
+  <header>
+    <nav>
+      <h1>Explore Historical Ethiopia</h1>
+      <a href="index.html" class="back-home">← Home</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="places-grid">
+      <div class="place-card">
+        <img src="./history/img/lalibela.jpg"/>
+        <h2>Lalibela</h2>
+        <p>Famous for its rock-hewn churches carved from solid rock in the 12th century.</p>
+        <a href="Lalibela.html">view detail</a>
+        <a href="booking.html" class="book-btn">Book Here</a>
+      </div>
+
+      <div class="place-card">
+        <img src="./history/img/Gondar.jpg"/>
+        <h2>Gondar</h2>
+        <p>Known as the "Camelot of Africa" for its royal castles and ancient architecture.</p>
+        <a href="Gondar.html">view detail</a>
+        <a href="booking.html" class="book-btn">Book Here</a>
+      </div>
+
+      <div class="place-card">
+        <img src="./history/img/Axum hawelt.jpg"/>
+        <h2>Axum</h2>
+        <p>Ancient city and the center of the Axumite Empire, with giant obelisks and ruins.</p>
+        <a href="Axum.html">view detail</a>
+        <a href="booking.html" class="book-btn">Book Here</a>
+      </div>
+
+      <div class="place-card">
+        <img src="./history/img/Harar jogol.jpg"/>
+        <h2>Harar Jugol</h2>
+        <p>The fourth holiest city in Islam, full of narrow alleys, mosques, and vibrant culture.</p>
+        <a href="Harar jugol.html">view detail</a>
+        <a href="booking.html" class="book-btn">Book Here</a>
+      </div>
+
+      <div class="place-card">
+        <img src="./history/img/simien mountain.jpg"  />
+        <h2>Simien Mountains</h2>
+        <p>Home to spectacular landscapes and endemic wildlife like Gelada baboons and Walia ibex.</p>
+        <a href="simien mountain.html">view detail</a>
+        <a href="booking.html" class="book-btn">Book Here</a>
+      </div>
+
+      <div class="place-card">
+        <img src="./history/img/Tiya.jpg">
+        <h2>Tiya</h2>
+        <p>A UNESCO World Heritage Site with ancient stone pillars and mysterious symbols.</p>
+        <a href="Tiya.html">view detail</a>
+        <a href="booking.html" class="book-btn">Book Here</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

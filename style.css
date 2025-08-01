@@ -1,0 +1,266 @@
+/* style.css */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  color: #2c3e50;
+}
+
+.container, .places, .booking-form {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background: #2980b9;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #1abc9c;
+}
+
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body.welcome-page {
+  font-family: 'Georgia', serif;
+  background-image: url('https://images.unsplash.com/photo-1580428180422-e05b4c3c85a4'); /* Beautiful Ethiopian landscape */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.welcome-container {
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.flag {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  opacity: 0.9;
+}
+
+.main-title {
+  font-size: 64px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffd700;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.subtitle {
+  font-size: 28px;
+  margin-bottom: 40px;
+  font-style: italic;
+  color: #fff;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.explore-btn {
+  padding: 14px 32px;
+  background: linear-gradient(135deg, #ffcc00, #ff9900);
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+  box-shadow: 0 0 10px #ff9900;
+  transition: all 0.3s ease;
+}
+
+.explore-btn:hover {
+  background: #ffc107;
+  color: #000;
+  box-shadow: 0 0 20px #ff9900;
+  transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Place Cards */
+body.destination-page {
+  font-family: 'Georgia', serif;
+  background-color: #fefae0;
+  color: #333;
+}
+
+nav {
+  background-color: #003300;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 24px;
+}
+
+nav .back-home {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.places-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  padding: 40px;
+}
+
+.place-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.place-card:hover {
+  transform: scale(1.03);
+}
+
+.place-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.place-card h2 {
+  font-size: 22px;
+  margin: 15px;
+  color: #006400;
+}
+
+.place-card p {
+  font-size: 16px;
+  padding: 0 15px 15px;
+}
+
+.book-btn {
+  display: block;
+  background: #ffcc00;
+  color: black;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+  font-weight: bold;
+  border-top: 1px solid #eee;
+}
+body.booking-page {
+  background-color: #f2f2f2;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+nav {
+  background-color: #003300;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 24px;
+}
+
+nav .back-home {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.booking-form-container {
+  max-width: 500px;
+  margin: 50px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.booking-form-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #003300;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+form input,
+form select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+form .book-btn {
+  background-image: url('img/Axum hawelt.jpg');
+  margin-top: 20px;
+  background-color: #ffcc00;
+  border: none;
+  color: #000;
+  padding: 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form .book-btn:hover {
+  background-color: #e6b800;
+}
