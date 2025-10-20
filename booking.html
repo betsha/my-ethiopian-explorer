@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Booking Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="booking-page">
+  <header>
+    <nav>
+      <h1>Book Your Visit</h1>
+      <a href="destinations.html" class="back-home">← Back to Destinations</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="booking-form-container">
+      <h2>Fill Out Your Booking Information</h2>
+      <form id="bookingForm">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="place">Place You Want to Visit</label>
+        <select id="place" name="place" required>
+          <option value="">-- Choose a place --</option>
+          <option value="Lalibela">Lalibela</option>
+          <option value="Gondar">Gondar</option>
+          <option value="Axum">Axum</option>
+          <option value="Harar Jugol">Harar Jugol</option>
+          <option value="Simien Mountains">Simien Mountains</option>
+          <option value="Tiya">Tiya</option>
+        </select>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required />
+
+        <button type="submit" class="book-btn">Book Now</button>
+      </form>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById("bookingForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("✅ Thank you! Your booking has been submitted.");
+      this.reset(); // optional: clear form after submission
+    });
+  </script>
+</body>
+</html>
